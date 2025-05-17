@@ -16,7 +16,7 @@ MODULE_big = uint
 OBJS = aggregates.o hash.o hex.o inout.o magic.o misc.o operators.o
 DATA_built = uint--$(extension_version).sql
 
-REGRESS = init hash hex operators misc drop
+REGRESS = init hash hex operators misc binary drop
 REGRESS_OPTS = --inputdir=test
 
 EXTRA_CLEAN += operators.c operators.sql test/sql/operators.sql
